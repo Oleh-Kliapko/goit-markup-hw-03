@@ -14,8 +14,6 @@ body{
     font-family: Roboto, Raleway, sans-serif;
 }
 
-/* outline: 2px solid tomato; */
-
 .list{
     list-style: none;
     padding: 0;
@@ -26,7 +24,7 @@ body{
     width: 1200px;
     padding: 0px 15px;
     margin: 0px auto;
-    /* border: 2px solid tomato; */
+    border: 2px solid tomato;
 }
 
 /* Logo style */
@@ -79,8 +77,6 @@ color: var(--accent-color);
     letter-spacing: 0.06em;
     text-align: center;
     min-height: 600px;
-    padding: 0;
-    margin: 0;
     margin-bottom: 94px;
 }
 
@@ -144,7 +140,11 @@ color: var(--accent-color);
     text-align: center;
     text-decoration: none;
     cursor: pointer;
-    padding: 6px 22px;
+}
+
+.filters{
+    margin-top: 94px;
+    margin-bottom: 50px;
 }
 
 .filters .button:hover,
@@ -238,18 +238,33 @@ color: var(--accent-color);
 
 /*Portfolio our project*/
 
+.projects{
+    margin-bottom: 94px;
+}
+
+.projects-item{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.projects-item img{
+    margin-bottom: 20px;
+}
+
 .projects .title{
     color: var(--head-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 
 .projects .text{
     color: var(--text-color);
     line-height: 1.88;
     letter-spacing: 0.03em;
+    padding-bottom: 20px;
 }
 
 /* Footer */
