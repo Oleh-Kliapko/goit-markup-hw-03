@@ -25,11 +25,8 @@ body {
 	width: 1200px;
 	padding-left: 15px;
 	padding-right: 15px;
-	margin-top: 0px;
-	margin-bottom: 0px;
 	margin-right: auto;
 	margin-left: auto;
-	border: 2px solid tomato;
 }
 
 /* Logo style */
@@ -208,11 +205,10 @@ body {
 .features {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 94px;
 }
 
 .features .item {
-	width: 270px;
+	width: calc((100%-90px) / 4);
 	margin-right: 30px;
 }
 
@@ -238,9 +234,19 @@ body {
 
 /* Our work*/
 .work {
-	margin-top: 50px;
-	margin-bottom: 94px;
+	display: flex;
+	flex-wrap: wrap;
+
 	text-align: center;
+}
+
+.work .item {
+	width: calc((100%-60px) / 3);
+	margin-right: 30px;
+}
+
+.work .item:nth-child(3n) {
+	margin-right: 0;
 }
 
 /*Our team*/
