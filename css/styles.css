@@ -8,6 +8,7 @@
 	--secondary-bgr-color: #f5f4fa; /*другорядний колір підкладки*/
 	--border-color: #eeeeee; /*колір рамок на картинках*/
 	--secondary-border-color: #ececec; /*другорядний колір рамки*/
+	--standart-margin: 30px; /*стандартні відступи між блоками*/
 }
 
 body {
@@ -190,12 +191,12 @@ body {
 	flex-wrap: wrap;
 	padding-top: 94px;
 	padding-bottom: 94px;
-	margin-right: -30px;
+	margin-right: calc(-1 * var(--standart-margin));
 }
 
 .features .item {
-	width: calc(100% / 4 - 30px);
-	margin-right: 30px;
+	width: calc(100% / 4 - var(--standart-margin));
+	margin-right: var(--standart-margin);
 }
 
 /* .features .item:last-child {
@@ -225,12 +226,12 @@ body {
 	margin-top: 50px;
 	padding-bottom: 94px;
 	text-align: center;
-	margin-right: -30px;
+	margin-right: calc(-1 * var(--standart-margin));
 }
 
 .work .item {
-	width: calc(100% / 3 - 30px);
-	margin-right: 30px;
+	width: calc(100% / 3 - var(--standart-margin));
+	margin-right: var(--standart-margin);
 }
 
 /* .work .item:nth-child(3n) {
@@ -254,14 +255,14 @@ body {
 	flex-wrap: wrap;
 	text-align: center;
 	padding-bottom: 94px;
-	margin-right: -30px;
+	margin-right: calc(-1 * var(--standart-margin));
 }
 
 .team-item {
 	background: var(--main-light-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
-	margin-right: 30px;
+	margin-right: var(--standart-margin);
 }
 
 /* .team-item:nth-child(4n) {
@@ -338,14 +339,14 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	padding-bottom: 94px;
-	margin-right: -30px;
-	margin-bottom: -30px;
+	margin-right: calc(-1 * var(--standart-margin));
+	margin-bottom: calc(-1 * var(--standart-margin));
 }
 
 .projects .item {
-	margin-right: 30px;
-	margin-bottom: 30px;
-	width: calc((100% / 3) - 30px);
+	margin-right: var(--standart-margin);
+	margin-bottom: var(--standart-margin);
+	width: calc((100% / 3) - var(--standart-margin));
 	border: 1px solid var(--border-color);
 }
 
