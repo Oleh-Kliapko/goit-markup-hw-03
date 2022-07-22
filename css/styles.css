@@ -7,6 +7,7 @@
 	--main-dark-color: #000000; /*чорний колір*/
 	--secondary-bgr-color: #f5f4fa; /*другорядний колір підкладки*/
 	--border-color: #eeeeee; /*колір рамок на картинках*/
+	--secondary-border-color: #ececec; /*другорядний колір рамки*/
 }
 
 body {
@@ -69,6 +70,7 @@ body {
 .main-nav {
 	display: flex;
 	align-items: center;
+	border-bottom: 1px solid var(--secondary-border-color);
 }
 
 .site-nav {
