@@ -252,6 +252,12 @@ body {
 	margin-right: var(--block-margin);
 }
 
+.work-photo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
 /* .work .item:nth-child(3n) {
 	margin-right: 0;
 } */
