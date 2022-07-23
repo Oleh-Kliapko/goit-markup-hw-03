@@ -322,8 +322,8 @@ body {
 
 .section.porfolio {
 	display: block;
-	margin-top: var(--section-margin);
-	margin-bottom: var(--section-margin);
+	padding-top: var(--section-margin);
+	padding-bottom: var(--section-margin);
 }
 
 /*Portfolio Button*/
@@ -451,10 +451,9 @@ body {
 	display: block;
 	color: var(--main-light-color);
 	text-decoration: none;
-	margin-bottom: 9px;
 }
 
-.address .item + .item {
+.address .item {
 	margin-top: 9px;
 }
 
